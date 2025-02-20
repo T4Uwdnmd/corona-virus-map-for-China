@@ -27,7 +27,7 @@ def index():
 
 @app.route("/chinaprovicne")
 def chinaprovince():
-	client = MongoClient("mongodb+srv://SunSiYuan:david20020304@cluster0.tqtvmeb.mongodb.net/")
+	client = MongoClient("mongodb+srv://username:password@*****")
 	db = client.coronavirus
 	collection = db.chinaprovince
 	chinaprovincecusor = collection.find({'dateId': "20200702"} )
